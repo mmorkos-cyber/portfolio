@@ -1,7 +1,13 @@
 .index-container{
     display: flex;
     justify-content: center;
-    padding-top: 6%;
+    margin-top: 10%;
+}
+
+.profile{
+    border: 2px solid;
+    border-radius: 12px;
+    display: flex;
 }
 
 .avatar-img{
@@ -16,7 +22,7 @@
 .cv{
     text-decoration: none;
     color: limegreen;
-    border: 2px solid limegreen;
+    border: 2px solid black;
   border-radius: 8px;
   padding: 8px;
   background-color: black;

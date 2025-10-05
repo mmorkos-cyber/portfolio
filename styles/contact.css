@@ -1,14 +1,13 @@
 .contact-center{
     display: flex;
     justify-content: center;
+    margin-top: 10%;
 }
 .contact-container {
     text-align: center;
-    margin-top: 50px;
     padding: 20px;
-    border-style: solid;
-    border-radius: 30%;
-    border-color: black;
+    border: 2px solid;
+    border-radius: 12px;
 }
 
 .contact-grid {

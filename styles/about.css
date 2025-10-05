@@ -1,7 +1,14 @@
+.about-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
 .about-container {
     max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
+    padding: 10px;
     text-align: left;
     line-height: 1.6;
+    border: 2px solid;
+    border-radius: 12px;
 }
