@@ -6,6 +6,8 @@
     <title>Mario</title>
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_right" />
 </head>
 <body>
     <nav>
@@ -23,12 +25,13 @@
             <div class="nav-links nav-right">
                 <a href="#projets">Projets</a>
                 <a href="#contact">Contact</a>
-                <a href="test-card.html">test-card</a>
             </div>
 
         </div>
     </nav>
 <div class="index-container">
+
+    <!-- profile section -->
     <div class="profile" id="profile">
         <div class="avatar">
             <img src="/img/Avatoon-Avatar.svg" alt="My avatar" class="avatar-img">
@@ -44,25 +47,73 @@
 
                 N’hésite pas à jeter un œil à mes projets ou à me contacter si tu veux collaborer !
             </p>
-            <a href="/CV-Mario-WEBDEV-FR.pdf" download class="cv">Télécharger mon cv</a>
         </div>
         
         
     </div>
 
+
+
+    <!-- certifications and badges section -->
     <div class="Certifications" id="Certifications">
         <h4>
             Mes Certifications et badges
         </h4>
-        <div class="Certifications" id="Certifications">
+        <div class="container swiper">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/img/pexels-2151973914-34179132.jpg" alt="" class="card-image">
+                            <p class="badge item1">item1</p>
+                            <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                            <button class="card-button material-symbols-rounded">keyboard_arrow_right</button>
 
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/img/pexels-2151973914-34179132.jpg" alt="" class="card-image">
+                            <p class="badge item2">item2</p>
+                            <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                            <button class="card-button material-symbols-rounded">keyboard_arrow_right</button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/img/pexels-2151973914-34179132.jpg" alt="" class="card-image">
+                            <p class="badge item3">item3</p>
+                            <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                            <button class="card-button material-symbols-rounded">keyboard_arrow_right</button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/img/pexels-2151973914-34179132.jpg" alt="" class="card-image">
+                            <p class="badge item4">item4</p>
+                            <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                            <button class="card-button material-symbols-rounded">keyboard_arrow_right</button>
+
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
         </div>
     </div>
 
+
+    <!-- Projets section -->
     <div class="projets" id="projets">
         <h4>Mes projets</h4>
     </div>
 
+
+
+
+    <!-- contact section -->
     <div class="contact" id="contact">
         <div class="contact-container">
             <h2>Je suis à votre disposition pour tout contact.</h2>
@@ -82,11 +133,17 @@
                     <h3>LinkedIn</h3>
                     <a href="">My LinkedIn</a>
                 </div>
+                <div class="contact-item">
+                    <a href="/CV-Mario-WEBDEV-FR.pdf" download class="cv">Télécharger mon cv</a>
+                </div>
+                
+
             </div>
         </div>
     </div>
 </div>
     
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="/Certifications-card.js"></script>
 </body>
 </html>
