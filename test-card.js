@@ -1,27 +1,27 @@
-const swiper = new swiper('.card-wrapper', {
+new Swiper('.card-wrapper', {
     loop: true,
     spaceBetween: 30,
 
     pagination: {
-        el: 'swiper-pagination',
+        el: '.swiper-pagination',
         clickable: true,
         dynamicBullets: true,
     },
 
     navigation: {
         nextEl: '.swiper-button-next',
-        prevEl: 'swiper-button-prev',
+        prevEl: '.swiper-button-prev',
     },
 
     breakpoints: {
         0: {
-            slidePerView: 1
+            slidesPerView: 1
         },
          768: {
-            slidePerView: 2
+            slidesPerView: 2
         },
          1024: {
-            slidePerView: 3
+            slidesPerView: 3
         },
     }
 
