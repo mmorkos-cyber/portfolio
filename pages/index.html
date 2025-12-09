@@ -59,49 +59,54 @@
         <h4>
             Mes Certifications et badges
         </h4>
-        <div class="container swiper">
-            <div class="card-wrapper">
-                <ul class="card-list swiper-wrapper">
-                    <li class="card-item swiper-slide">
-                        <a href="#" class="card-link">
-                            <img src="/img/pexels-2151973914-34179132.jpg" alt="" class="card-image">
-                            <p class="badge item1">item1</p>
-                            <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                            <button class="card-button material-symbols-rounded">keyboard_arrow_right</button>
-
-                        </a>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <a href="#" class="card-link">
-                            <img src="/img/pexels-2151973914-34179132.jpg" alt="" class="card-image">
-                            <p class="badge item2">item2</p>
-                            <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                            <button class="card-button material-symbols-rounded">keyboard_arrow_right</button>
-                        </a>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <a href="#" class="card-link">
-                            <img src="/img/pexels-2151973914-34179132.jpg" alt="" class="card-image">
-                            <p class="badge item3">item3</p>
-                            <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                            <button class="card-button material-symbols-rounded">keyboard_arrow_right</button>
-                        </a>
-                    </li>
-                    <li class="card-item swiper-slide">
-                        <a href="#" class="card-link">
-                            <img src="/img/pexels-2151973914-34179132.jpg" alt="" class="card-image">
-                            <p class="badge item4">item4</p>
-                            <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                            <button class="card-button material-symbols-rounded">keyboard_arrow_right</button>
-
-                        </a>
-                    </li>
-                </ul>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-slide-button swiper-button-prev"></div>
-                <div class="swiper-slide-button swiper-button-next"></div>
-            </div>
+        
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Tout</button>
+            <button class="btn" onclick="filterSelection('Developpement')"> Développement</button>
+            <button class="btn" onclick="filterSelection('ITSystemes')"> IT & Systèmes</button>
         </div>
+
+<!-- Badges Gallery Grid -->
+
+<ul class="card-grid">
+ <li class="card-item Developpement">
+    <div class="card-link">
+      <img src="/pexels-2151973914-34179132.jpg" alt="" class="card-image">
+      <p class="badge">Développement</p>
+      <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+    </div>
+  </li>
+  <li class="card-item Developpement">
+    <div class="card-link">
+      <img src="/pexels-2151973914-34179132.jpg" alt="" class="card-image">
+      <p class="badge">Développement</p>
+      <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+    </div>
+  </li>
+  <li class="card-item ITSystemes">
+    <div class="card-link">
+      <img src="/pexels-2151973914-34179132.jpg" alt="" class="card-image">
+      <p class="badge">IT & Systèmes</p>
+      <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+    </div>
+  </li>
+  <li class="card-item Developpement">
+    <div class="card-link">
+      <img src="/pexels-2151973914-34179132.jpg" alt="" class="card-image">
+      <p class="badge">Développement</p>
+      <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+    </div>
+  </li>
+  <li class="card-item ITSystemes">
+    <div class="card-link">
+      <img src="/pexels-2151973914-34179132.jpg" alt="" class="card-image">
+      <p class="badge">IT & Systèmes</p>
+      <h2 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+    </div>
+  </li>
+
+</ul>
+        
     </div>
 
 
@@ -114,7 +119,6 @@
 
 
     <!-- contact section -->
-    <div class="contact" id="contact">
         <div class="contact-container">
             <h2>Je suis à votre disposition pour tout contact.</h2>
 
@@ -140,10 +144,7 @@
 
             </div>
         </div>
-    </div>
 </div>
-    
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script src="/Certifications-card.js"></script>
+<script src="/BadgesGalleryFilter.js"></script>
 </body>
 </html>
