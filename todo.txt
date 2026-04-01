@@ -1,6 +1,4 @@
-1- fix the carousel width cutoff
-2- lower the title for the certifactions and badges
-3- make/carousel for projets
-4- center or change the contacts
-5- style the buttons in contact before centering to make sure of size
-6- voir claud ia
+1- fix skills section
+2- add Projects
+3- test contact form
+4- add personal section?

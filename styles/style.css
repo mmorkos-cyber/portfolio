@@ -250,14 +250,18 @@ section{padding: 6rem 2.5rem;}
 .about-text{font-size: 0.9rem; line-height: 2; color: var(--text);}
 .about-text p + p {margin-top: 1rem;}
 .about-text strong {color: var(--green); font-weight: 600;}
-.terminal-box{
+.terminal-box {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .terminal-bar {
     background: var(--bg);
     padding: 0.6rem 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    display: flex; align-items: center; gap: 0.5rem;
     border-bottom: 1px solid var(--border);
-}
+  }
 .dot { width: 10px; height: 10px; border-radius: 50%; }
 .dot.r { background: #ff5f57; }
 .dot.y { background: #febc2e; }
