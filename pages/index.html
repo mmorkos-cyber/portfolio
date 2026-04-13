@@ -8,6 +8,7 @@
     <title>Mario Morkos | Développeur Web & Technicien Informatique</title>
     <link rel="stylesheet" href="/styles/style.css">
     <script src="/Script/script.js" defer></script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </head>
 <body>
     <nav>
@@ -166,6 +167,70 @@
         <div class="projects-grid fade-up">
             <div class="project-card">
                 <div class="project-num">001</div>
+                <div class="project-name">développer le site de LP-store</div>
+                <div class="project-desc">le premier stage que j'ai realisé durant ma formation où j'ai developper un site e-commerce avec wordpress</div>
+                <div class="project-skills">
+                    <span class="tag">Wordpress</span><span class="tag">Responsive design</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-num">002</div>
+                <div class="project-name">développer le site de l'agence espira</div>
+                <div class="project-desc">le deuxieme stage que j'ai realisé durant ma formation où j'ai créer des templates pour les utilisateurs du site  avec wordpress</div>
+                <div class="project-skills">
+                    <span class="tag">Wordpress</span><span class="tag">Responsive design</span><span class="tag">UI/UX</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-num">003</div>
+                <div class="project-name">développer le site d'illimithé</div>
+                <div class="project-desc">le troisième stage que j'ai realisé durant ma formation où j'ai developper un site e-commerce avec wordpress</div>
+                <div class="project-skills">
+                    <span class="tag">Wordpress</span><span class="tag">Responsive design</span><span class="tag">UI/UX</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-num">004</div>
+                <div class="project-name">les petites mains vegetales</div>
+                <div class="project-desc"></div>
+                <div class="project-skills">
+                    <span class="tag"></span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-num">005</div>
+                <div class="project-name">Folh</div>
+                <div class="project-desc"></div>
+                <div class="project-skills">
+                    <span class="tag"></span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-num">006</div>
+                <div class="project-name">site durant prod</div>
+                <div class="project-desc"></div>
+                <div class="project-skills">
+                    <span class="tag"></span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-num">007</div>
+                <div class="project-name">clem prévention</div>
+                <div class="project-desc"></div>
+                <div class="project-skills">
+                    <span class="tag"></span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-num">008</div>
+                <div class="project-name">Actes Formation</div>
+                <div class="project-desc"></div>
+                <div class="project-skills">
+                    <span class="tag"></span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-num">009</div>
                 <div class="project-name"></div>
                 <div class="project-desc"></div>
                 <div class="project-skills">
@@ -193,20 +258,33 @@
                 <a href="https://www.linkedin.com/in/mario-morkos-267301399/" class="contact-link"><span class="cl-icon">→</span> linkedin.com/in/mario-morkos</a>
             </div>
 
-            <form onsubmit="return false">
+            <div data-fs-success style="color: var(--green); font-size: 0.8rem;"></div>
+            <div data-fs-error style="color: red; font-size: 0.8rem;"></div>
+
+            <form id="contact-form">
                 <div class="form-group">
                     <label>Nom</label>
-                    <input type="text" placeholder="Jean Dupont">
+                    <input type="text" name="name" placeholder="Jean Dupont" required data-fs-field>
+                    <span data-fs-error="name"></span>
                 </div>
+
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="email" placeholder="jean@example.com">
+                    <input type="email" name="email" placeholder="jean@example.com" required data-fs-field>
+                    <span data-fs-error="email"></span>
                 </div>
+
                 <div class="form-group">
                     <label>Message</label>
-                    <textarea placeholder="Parlez-moi de votre projet..."></textarea>
+                    <textarea name="message" placeholder="Parlez-moi de votre projet..." required data-fs-field></textarea>
+                    <span data-fs-error="message"></span>
                 </div>
-                <button type="submit" class="btn-primary" style="align-self:flex-start">Envoyer le message →</button>
+
+                <button type="submit" class="btn-primary" data-fs-submit-btn>
+                    Envoyer le message →
+                </button>
+                <div data-fs-success></div>
+                <div data-fs-error></div>
             </form>
         </div>
     </section>

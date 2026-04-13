@@ -1,4 +1,4 @@
-1- fix skills section
-2- add Projects
-3- test contact form
+1- fix skills section X
+2- add Projects 
+3- test contact form X
 4- add personal section?
